@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Testing</title>
+</head>
+<body>
+    <div class="site">
+        <header class="site__header site-header">
+            <div class="site-header__body body">
+                    <a href="#" class="site-header__logo"></a>
+                    <div class="site-header__menu header-menu">
+                        <nav class="header-menu__body">
+                            <a class="header-menu__item header-menu__item--active" href="#">Бизнес</a>
+                            <a class="header-menu__item" href="#">О нас</a>
+                            <a class="header-menu__item" href="#">Цены</a>
+                            <a class="header-menu__item" href="#order__link">Оформить заказ</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="site-header__mobail mobail">
+                        <input id="mobail__toggle" class="mobail__toggle"  type="checkbox" />
+                        <label class="mobail__btn" for="mobail__toggle">
+                          <span class="mobail__btn-item"></span>
+                        </label>  
+                        <ul class="mobail__box">
+                          <li><a class="mobail__item" href="#">Бизнес</a></li>
+                          <li><a class="mobail__item" href="#">О нас</a></li>
+                          <li><a class="mobail__item" href="#">Цены</a></li>
+                          <li><a class="mobail__item" href="#order__link">Оформить заказ</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        <main class="site__main site-main">
+            <div class="site-main__body">
+                <div class="site-main__about about">
+                    <div class="about__container">
+                        <div class="about__body about-body body">
+                            <div class="about__title">
+                                <span class="about__title about__title--blue">Lorem ipsum</span> dolor sit<br>amet consectetur <span class="about__title about__title--blue">adipiscing</span>
+                            </div>
+                            <div class="about__text about-text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus!
+                                <ul class="about-text__list">
+                                    <li class="about-text__item">Totam rem aperiam eaque ipsa</li>
+                                    <li class="about-text__item">Sit voluptatem accusantium doloremque laudantium</li>
+                                    <li class="about-text__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                                </ul>
+                            </div>
+                            <div class="about__action">
+                                <a class="about__link" href="#order__link"><input type="button" class="about__button about__button--active"type="submit" value="Заказать"></a>
+                                <input type="button" class="about__button" type="submit" value="Подробнее">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="site-main__anchor" name="order__link"></a>
+                <div class="site-main__order order">
+                    <div class="order__body order-body body">
+                        <div class="order__description">
+                            <h2 class="order__title">
+                                оформление <span class="order__title order__title--blue">заказа</span>
+                            </h2>
+                            <p class="order__subtitle">
+                                Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                            </p>
+                        </div>
+                        <div class="order__steps steps">
+                                <div class="steps__item">
+                                    <div class="steps__item-img" data-item="1">
+
+                                    </div>
+                                    <div class="steps__item-text">
+                                        Lorem ipsum dolor sit amet
+                                    </div>
+                                </div>
+                                <div class="steps__item">
+                                    <div class="steps__item-img" data-item="2">
+
+                                    </div>
+                                    <div class="steps__item-text">
+                                        Сonsecteturadipiscing elit
+                                    </div>
+                                </div>
+                                <div class="steps__item">
+                                    <div class="steps__item-img" data-item="3">
+
+                                    </div>
+                                    <div class="steps__item-text">
+                                        Sed do eiusmod tempor
+                                    </div>
+                                </div>
+                                <div class="steps__item">
+                                    <div class="steps__item-img" data-item="4">
+
+                                    </div>
+                                    <div class="steps__item-text">
+                                        Esse cillum dolore eu fugiat
+                                    </div>
+                                </div>
+                                <div class="steps__item">
+                                    <div class="steps__item-img" data-item="5">
+
+                                    </div>
+                                    <div class="steps__item-text">
+                                        Excepteur sint occaecat cupidatat non proident
+                                    </div>
+                                </div>
+                        </div>
+
+                            <form action="" class="order__form order-form" name="order">
+
+                                        <select name="system-type[]" id="" class="order-form__select select">
+                                            <option disabled selected>Выберите тип системы</option>
+                                            <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                            <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                            <option value="Et harum quidem">Et harum quidem</option>
+                                            <option value="Temporibus autem">Temporibus autem</option>
+                                            <option value="Itaque earum rerum">Itaque earum rerum</option>
+                                            <option value="Maecenas nec odio et ante tincidunt tempus">Maecenas nec odio et ante tincidunt tempus</option>
+                                            <option value="Donec vitae sapien ut libero venenatis faucibus">Donec vitae sapien ut libero venenatis faucibus</option>
+                                            <option value="Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt"> Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt</option>
+                                            <option value="Duis leo">Duis leo</option> 
+                                        </select>
+                                        <input class="order-form__input" name="email" value="" placeholder="Ваш email"></input>
+                                        <input class="order-form__input" name="person-name" value="" placeholder="Ваше имя"></input>
+                                        <div class="order-form__range range">
+                                            <div class="range__title">Sed ut perspiciatis, unde omnis iste natus</div>
+                                            <div class="range__percent">
+                                                <output class="range__counter" for="flying" id="rangevalue" name="level" style="color: #fff;">0</output> %
+                                            </div>
+                                            <input class="range__input" name="flevel" type="range" min="0" max="100" value="0" step="1" value="75" oninput="rangevalue.value=value">
+                                        </div>
+                                        <label for="order-form__input--file" class="order-form__label">
+                                            <span class="order-form__file-icon-wrapper"><img class="order-form__file-icon" src="img/add-file.svg" alt="Выбрать файл" width="25"></span>
+                                            <span class="order-form__text order-form__text--file">Прикрепить файл</span>
+                                             <input id="order-form__input" class="order-form__input order-form__input--file" name="file" type="file" multiple>
+                                        </label>
+                                       
+                                         <input class="order-form__input order-form__input--send" type="submit" name="send" value="Отправить" >
+                            </form>
+    
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="site__footer site-footer">
+            <div class="site-footer__body site-footer-body body">
+                <div class="site-footer__rules">
+                    © 2018 «LOREMIPSUM.NET» Все права защищены.
+                </div>
+                <div class="site-footer__payment site-footer-payment">
+                    <div class="item-payment">
+                        <div class="item-payment__logo" data-item="1"></div>
+                        <div class="item-payment__text">QIWI wallet</div>
+                    </div>
+                    <div class="item-payment">
+                        <div class="item-payment__logo" data-item="2"></div>
+                        <div class="item-payment__text">Yandex Money</div>
+                    </div>
+                    <div class="item-payment">
+                        <div class="item-payment__logo" data-item="3"></div>
+                        <div class="item-payment__text">Web Money</div>
+                    </div>
+                </div>
+                <div class="site-footer__contacts contacts">
+                    <div class="item-contacts">
+                        <div class="item-contacts__logo" data-item="4"></div>
+                        <div class="item-contacts__text"><a href="mailto:info@ipsum228.com" class="item-contacts__link">info@ipsum228.com</a></div>
+                    </div>
+                    <div class="item-contacts">
+                        <div class="item-contacts__logo" data-item="5"></div>
+                        <div class="item-contacts__text"><a href="#" class="item-contacts__link">Мы ВКонтакте</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript" src="js/main.js">
+</script>
+
